@@ -15,11 +15,11 @@ class GestionBD extends PDO {
     //metodo constructor
     public function __construct() {
         try {
-        $servidor="localhost";
-        $bdatos="ventas";
+        $servidor="eurekabankdb.mysql.database.azure.com";
+        $bdatos="ventas@eurekabankdb";
         $url="mysql:host=".$servidor.";dbname=".$bdatos;
-        $user="root";
-        $password="";
+        $user="eurekabank";
+        $password="3ur3K4B@nk";
         parent::__construct($url, $user, $password);
         } catch (Exception $exc) {
             //El objeto exception será disparado a la capa anterior
