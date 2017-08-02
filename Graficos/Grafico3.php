@@ -5,11 +5,23 @@ require_once ('../jpgraph/jpgraph_line.php');
 $x_axis=array();
 $y_axis=array();
 $i=0;
-$con= mysqli_connect("localhost", "root","","ventas");
+//$con= mysqli_connect("localhost", "root","","ventas");
 
-if(mysqli_connect_errno()){
-    echo "Error";
-    }
+$host = 'eurekabankdb.mysql.database.azure.com';
+$username = 'eurekabank@eurekabankdb';
+$password = '3ur3K4B@nk';
+$db_name = 'ventas';
+
+$con = mysqli_init();
+mysqli_real_connect($con, $host, $username, $password, $db_name, 3306);
+if (mysqli_connect_errno($con)) {
+die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
+
+//if(mysqli_connect_errno()){
+//    echo "Error";
+//    }
+	
     $result= mysqli_query($con, "select * from ventas_mensuales");
     while($row= mysqli_fetch_array($result)){
         $x_axis[$i]=$row["ven_mes"];

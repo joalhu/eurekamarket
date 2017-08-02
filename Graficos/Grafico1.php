@@ -5,12 +5,26 @@ require_once ('../jpgraph/jpgraph_bar.php');
 $x_axis=array();
 $y_axis=array();
 $i=0;
-$con= mysqli_connect("localhost", "root","","ventas");
 
-if(mysqli_connect_errno()){
-    echo "Error";
-    }
-    $result= mysqli_query($con, "select * from producto");
+//$con= mysqli_connect("localhost", "root","","ventas");
+
+$host = 'eurekabankdb.mysql.database.azure.com';
+$username = 'eurekabank@eurekabankdb';
+$password = '3ur3K4B@nk';
+$db_name = 'ventas';
+
+$con = mysqli_init();
+mysqli_real_connect($con, $host, $username, $password, $db_name, 3306);
+if (mysqli_connect_errno($con)) {
+die('Failed to connect to MySQL: '.mysqli_connect_error());
+}
+
+
+//if(mysqli_connect_errno()){
+//    echo "Error";
+//    }
+    
+	$result= mysqli_query($con, "select * from producto");
     while($row= mysqli_fetch_array($result)){
         $x_axis[$i]=$row["pro_descripcion"];
         $y_axis["$i"]=$row["pro_cantidad"];
