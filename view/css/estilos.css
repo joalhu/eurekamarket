@@ -1,0 +1,70 @@
+body{
+    background:silver;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size:14px;
+}
+#cabecera{
+    background:#0A0EE3;
+    color:white;
+    padding: 0px;
+    height:auto;
+	font-size:18px;
+}
+#pie{
+    background-color: black;
+    color:white;
+    padding: 15px;
+}
+#contenido{
+    background-color: #ccefff;
+    color:blue;
+    padding:5px;    
+    height: auto;
+}
+.Titulo{
+    font-size: 24px;
+    font-family: arial;
+    color: white;
+    padding: 0px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+.Subtitulo{
+    font-size: 14px;
+    font-family: arial;
+    color: cyan;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+}
+.menu{
+    color:yellow;
+    background-color: black;
+    display: compact;
+    text-decoration: none;
+    padding: 8px;    
+    font-family: arial;
+    font-size: 12px;
+}
+.menu:hover{
+    color:white;
+    background-color: grey;
+    display: compact;
+    text-decoration: underline;
+    padding: 8px;    
+    font-family: arial;
+    font-size: 12px;
+}
+.boton{
+	background-color:black;
+	color:white;
+	border-radius:15px;
+}
+th{
+	background-color:#191919;
+	color:white;
+}
+#error{
+	color:red;
+     font-weight:bold;
+}
