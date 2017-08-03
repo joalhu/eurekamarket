@@ -35,7 +35,7 @@ die('Failed to connect to MySQL: '.mysqli_connect_error());
     $height=500;
     $graph=new Graph($width,$height);
     $graph->SetScale('textint');
-    $graph->title->Set("Reporte de Productos");
+    $graph->title->Set("Reporte de Productos 10");
     $graph->xaxis->title->Set("PRODUCTOS");
     $graph->xaxis->SetTickLabels($x_axis);
     $graph->yaxis->title->set("CANTIDAD");
