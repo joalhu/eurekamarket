@@ -17,7 +17,7 @@ class GestionBD extends PDO {
         try {
         $servidor="qhatumarket.mysql.database.azure.com";
         //$bdatos="ventas@eurekabankdb";
-		$bdatos="eurekabank@qhatumarket";
+		$bdatos="qhatumarket@qhatumarket";
         $url="mysql:host=".$servidor.";dbname=".$bdatos;
         $user="admin_qhatu";
         $password="3ur3K4B@nk";
