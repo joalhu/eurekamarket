@@ -16,8 +16,8 @@ class GestionBD extends PDO {
     public function __construct() {
         try {
         $servidor="eurekabankdb.mysql.database.azure.com";
-        //$bdatos="ventas@eurekabankdb";
-		$bdatos="eurekabank@eurekabankdb";
+        $bdatos="ventas@eurekabankdb";
+		//$bdatos="eurekabank@eurekabankdb";
         $url="mysql:host=".$servidor.";dbname=".$bdatos;
         $user="eurekabank";
         $password="3ur3K4B@nk";
